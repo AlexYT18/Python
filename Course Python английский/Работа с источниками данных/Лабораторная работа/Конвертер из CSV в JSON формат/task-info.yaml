@@ -1,0 +1,55 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 39
+        placeholder_text: "# TODO импортировать необходимые молули"
+        initial_state:
+          length: 39
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          import csv
+          import json
+        selected: false
+        status: Unchecked
+      - offset: 129
+        length: 40
+        placeholder_text: "...  # TODO считать содержимое csv файла"
+        initial_state:
+          length: 40
+          offset: 129
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          with open(INPUT_FILENAME) as f:
+                  lines = [line for line in csv.DictReader(f)]
+        selected: false
+        status: Unchecked
+      - offset: 175
+        length: 54
+        placeholder_text: "...  # TODO Сериализовать в файл с отступами равными 4"
+        initial_state:
+          length: 54
+          offset: 175
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          with open(OUTPUT_FILENAME, "w") as f:
+                  json.dump(lines, f, indent=4)
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: input.csv
+    visible: true
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+solution_hidden: true

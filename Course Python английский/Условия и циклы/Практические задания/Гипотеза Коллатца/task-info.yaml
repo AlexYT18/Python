@@ -1,0 +1,32 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 94
+        length: 69
+        placeholder_text: "# TODO Посчитайте количество действий над числом по гипотез\
+      е Коллатца"
+        initial_state:
+          length: 69
+          offset: 94
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          while num != 1:
+              if num % 2 == 1:
+                  num *= 3
+                  num += 1
+              else:
+                  num //= 2
+              count += 1
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

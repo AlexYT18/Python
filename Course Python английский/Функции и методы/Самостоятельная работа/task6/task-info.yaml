@@ -1,0 +1,32 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 79
+        length: 62
+        placeholder_text: "...  # TODO проверить что в строку входят только символы 1\
+      \ и 0"
+        initial_state:
+          length: 62
+          offset: 79
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          if not str_:
+                  return False
+          
+              for d in set(str_):  # выделяем все уникальные символы из строки
+                  if d not in ALLOW_SYMBOLS:
+                      return False
+              return True
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

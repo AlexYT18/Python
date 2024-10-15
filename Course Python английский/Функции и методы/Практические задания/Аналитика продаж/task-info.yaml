@@ -1,0 +1,41 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 43
+        length: 78
+        placeholder_text: "...  # TODO Вычислите общую стоимость проданных товаров из\
+      \ списка `sales_list`"
+        initial_state:
+          length: 78
+          offset: 43
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          total = 0
+              for sale in sales_list:
+                  total += sale["quantity"] * sale["price_per_unit"]
+          
+              return total
+        selected: false
+        status: Unchecked
+      - offset: 359
+        length: 103
+        placeholder_text: "...  # TODO Вызовете функцию calculate_total_sales и переда\
+      йте в функцию значение переменной sales_data"
+        initial_state:
+          length: 103
+          offset: 359
+        initialized_from_dependency: false
+        encrypted_possible_answer: calculate_total_sales(sales_data)
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

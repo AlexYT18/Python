@@ -1,0 +1,31 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 36
+        placeholder_text: "# TODO Распечатать таблицу умножения"
+        initial_state:
+          length: 36
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          size = 9  # Размер таблицы умножения
+          for i in range(2, size+1):
+              for j in range(2, size+1):
+                  result = i * j
+                  end = " " if j != size else ""  # Не печатать пробел для последнего столбца
+                  print(f"{result:2}", end=end)
+              print()
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

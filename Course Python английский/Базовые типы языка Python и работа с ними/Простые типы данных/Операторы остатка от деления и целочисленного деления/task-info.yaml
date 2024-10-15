@@ -1,0 +1,37 @@
+type: output
+files:
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 99
+        length: 62
+        placeholder_text: "...  # TODO найти полное количество дней"
+        initial_state:
+          length: 40
+          offset: 99
+        initialized_from_dependency: false
+        encrypted_possible_answer: total_hours // HOURS_IN_DAY
+        selected: true
+        status: Solved
+      - offset: 170
+        length: 66
+        placeholder_text: "...  # TODO найти оставшееся количество часов"
+        initial_state:
+          length: 45
+          offset: 148
+        initialized_from_dependency: false
+        encrypted_possible_answer: total_hours % HOURS_IN_DAY
+        selected: true
+        status: Solved
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 10 Oct 2024 21:55:31 UTC"
+record: -1

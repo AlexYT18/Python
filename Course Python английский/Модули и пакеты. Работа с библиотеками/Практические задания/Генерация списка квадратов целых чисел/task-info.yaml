@@ -1,0 +1,32 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 111
+        length: 127
+        placeholder_text: |-
+          # TODO заменить на list comprehension
+              squares = []
+              for i in range(n+1):
+                  squares.append(i**2)
+              return squares
+        initial_state:
+          length: 127
+          offset: 111
+        initialized_from_dependency: false
+        encrypted_possible_answer: "return [i ** 2 for i in range(n+1)]"
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

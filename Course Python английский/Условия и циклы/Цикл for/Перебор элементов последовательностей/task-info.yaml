@@ -1,0 +1,27 @@
+type: theory
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 69
+        length: 119
+        placeholder_text: |-
+          # TODO Заменить использование индексов на перебор значений списка
+          for i in range(len(numbers)):
+              total += numbers[i]
+        initial_state:
+          length: 119
+          offset: 69
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          for num in numbers:
+              total += num
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,49 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 48
+        placeholder_text: "# TODO Напишите функцию find_common_participants"
+        initial_state:
+          length: 48
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          def find_common_participants(participants1, participants2, separator=','):
+              participants_list1 = participants1.split(separator)
+              participants_list2 = participants2.split(separator)
+          
+              common_participants = list(set(participants_list1).intersection(participants_list2))
+              common_participants.sort()
+          
+              return common_participants
+        selected: false
+        status: Unchecked
+      - offset: 156
+        length: 65
+        placeholder_text: "# TODO Провеьте работу функции с разделителем отличным от з\
+      апятой"
+        initial_state:
+          length: 65
+          offset: 156
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          participants = find_common_participants(participants_first_group, participants_second_group)
+          print("Общие участники:", participants)
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+solution_hidden: true

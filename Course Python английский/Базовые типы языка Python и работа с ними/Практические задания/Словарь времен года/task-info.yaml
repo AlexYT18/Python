@@ -1,0 +1,33 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 15
+        length: 43
+        placeholder_text: "...  # TODO запишите словарь времен года"
+        initial_state:
+          length: 40
+          offset: 15
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          {
+              1: "Зима",
+              2: "Весна",
+              3: "Лето",
+              4: "Осень",
+          }
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 10 Oct 2024 22:50:41 UTC"
+record: -1

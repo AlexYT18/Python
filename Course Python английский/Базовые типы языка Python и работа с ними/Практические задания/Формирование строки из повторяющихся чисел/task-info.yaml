@@ -1,0 +1,30 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 63
+        placeholder_text: "# TODO составьте строку согласно условию"
+        initial_state:
+          length: 40
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          str_numbers = "0" * 20 + "1" * 50 + "2" * 30
+          
+          print(str_numbers)
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 10 Oct 2024 22:51:17 UTC"
+record: -1

@@ -1,0 +1,45 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 239
+        length: 209
+        placeholder_text: |-
+          # TODO найти сумму, количество и среднее арифметическое уникальных чисел
+          
+          print("Сумма уникальных чисел:", ...)
+          print("Количество уникальных чисел:", ...)
+          print("Среднее арифметическое уникальных чисел:", ...)
+        initial_state:
+          length: 209
+          offset: 82
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          unique_numbers = set(list_)
+          
+          sum_of_numbers = sum(unique_numbers)
+          count_of_numbers = len(unique_numbers)
+          average_of_numbers = round(sum_of_numbers / count_of_numbers, 5)
+          
+          describe = {
+              "Сумма уникальных чисел:": sum_of_numbers,
+              "Количество уникальных чисел:": count_of_numbers,
+              "Среднее арифметическое уникальных чисел:": average_of_numbers,
+          }
+          print(describe)
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 11 Oct 2024 14:18:59 UTC"
+record: -1
+solution_hidden: true

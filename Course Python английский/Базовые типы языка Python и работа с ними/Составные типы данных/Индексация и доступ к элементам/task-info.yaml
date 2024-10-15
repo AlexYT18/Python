@@ -1,0 +1,55 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 72
+        length: 62
+        placeholder_text: "...  # TODO Получить последнего участника"
+        initial_state:
+          length: 41
+          offset: 72
+        initialized_from_dependency: false
+        encrypted_possible_answer: "list_players[-1]"
+        selected: false
+        status: Solved
+      - offset: 144
+        length: 38
+        placeholder_text: "...  # TODO Получить первого участника"
+        initial_state:
+          length: 38
+          offset: 123
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          {
+              "Первый участник": list_players[0]
+          }
+        selected: true
+        status: Solved
+      - offset: 184
+        length: 118
+        placeholder_text: |-
+          # TODO Распечатать имя последнего и первого участника
+          print("Последний участник:", ...)
+          print("Первый участник:", ...)
+        initial_state:
+          length: 118
+          offset: 163
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          print("Последний участник:", last_player)
+          print("Первый участник:", reestr["Первый участник"])
+        selected: false
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 10 Oct 2024 22:01:38 UTC"
+record: -1

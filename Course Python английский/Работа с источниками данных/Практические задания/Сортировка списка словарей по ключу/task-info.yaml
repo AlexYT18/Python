@@ -1,0 +1,28 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 134
+        length: 51
+        placeholder_text: "...  # TODO отсортировать и вернуть список словарей"
+        initial_state:
+          length: 51
+          offset: 134
+        initialized_from_dependency: false
+        encrypted_possible_answer: "return sorted(json_data, key=lambda item: item[\"\
+      id\"])"
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: input.json
+    visible: true
+    learner_created: false
+status: Unchecked
+record: -1
