@@ -9,8 +9,7 @@ for month in range(months):
     if month > 0:
         spend *= (1 + increase)
     deficit = spend - salary
-    if deficit > 0:
-        money_capital += deficit
+    money_capital += deficit
 
 money_capital = round(money_capital)
 
