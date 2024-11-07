@@ -2,7 +2,10 @@ def find_item_index(items, item_to_find):
     if item_to_find in items:
         return items.index(item_to_find)
     return None
+
+
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
+
 for find_item in ['банан', 'груша', 'персик']:
     index_item = find_item_index(items_list, find_item)  # Вызов функции для получения индекса товара
     if index_item is not None:
